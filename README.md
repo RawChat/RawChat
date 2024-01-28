@@ -70,3 +70,5 @@ RawChat的技术栈选用反向代理解决方案，即RawChat作为中间人转
 5.打开浏览器访问chat.abc.com，看到如下图则代表接入成功  
 ![image](https://github.com/RawChat/RawChat/assets/157953998/8c1b6e9d-9306-4780-a006-47f6087f012c)
 
+了解更多：  
+![image](https://github.com/RawChat/RawChat/assets/157953998/d311fb4c-4939-45ae-a1e6-430dd96a244a)
