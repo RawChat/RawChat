@@ -1,5 +1,5 @@
 RawChat
- 一个利用反向代理技术使用GPT官网的解决方案。
+ 一个利用反向代理使用GPT官网的解决方案。
 
 RawChat介绍
 RawChat的初衷是降低ChatGPT官网的使用门槛，RawChat支持的功能，包括但不限于如下：
@@ -14,9 +14,57 @@ RawChat的初衷是降低ChatGPT官网的使用门槛，RawChat支持的功能�
 9. 无需担心封号风险
 
 RawChat技术原理
-RawChat的技术栈选用 反向代理 官网解决方案，即RawChat作为中间人转发用户到官网的请求以及响应，从而实现免梯目的，并且RawChat会接管部分官网的功能，本地化部分接口（比如登录注册是由RawChat接管的，所以使用的不是官网账号），可以理解为您就在实时的使用官网。
-这与较有名的项目panxxx的技术原理上有所不同，panxxx是将官网网页代码静态化实现的，而RawChat则是能实时同步官网的所有最新功能
-正如前面所说：您就是在实时的使用官网。
 
+RawChat的技术栈选用反向代理解决方案，即RawChat作为中间人转发用户到官网的请求以及响应，从而实现免梯目的，并且RawChat会接管部分官网的功能，本地化部分接口（比如登录注册接口是由RawChat接管的，所以使用的不是官网账号），可以理解为您就在实时的使用官网。
 
-（[Rawchat成品演示站](https://chat.openai.fo)）
+[Rawchat使用教程文档](https://gqetpw6dpfw.feishu.cn/docx/Jc6idZvtRoEvxQxiF9Fcu4Hun8e)（一定要先阅读文档！！）
+
+[Rawchat演示站点](https://chat.openai.fo)，成品演示
+
+[SharedChat共享站点](https://sharedchat.cn/shared.html)，免费提供多个Plus共享账号！
+
+您也可以接入RawChat，让您的域名也拥有一样的功能
+RawChat快速接入：
+前置条件：
+1.您需要拥有自己的域名
+2.您需要拥有自己的服务器（linux、windows）都行
+3.您需要安装宝塔面板，方便操作
+接入步骤：
+假设域名为abc.com
+1.解析chat.abc.com、tcr9i.chat.abc.com、auth0.abc.com，一共需要解析三个到您自己的服务器
+2.打开宝塔面板添加网站，将上面的三个网址添加到网站，如下图
+![image](https://github.com/RawChat/RawChat/assets/157953998/7cbb5ba3-d786-42c0-b29d-da766ca15f0b)
+3.将这三个网站都开启SSL证书，Let's Encrypt免费
+4.将这三个网站都开启反向代理，如下图
+![Uploading image.png…]()
+反向代理配置：
+location /
+{
+    expires 12h;
+    if ($request_uri ~* "(php|jsp|cgi|asp|aspx)")
+    {
+         expires 0;
+    }
+    proxy_pass https://（chat、tcr9i.chat、auth0替换成对应的前缀，一共三个网站）.rawchat.fun;
+    proxy_set_header Host $proxy_host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header REMOTE-HOST $remote_addr;
+    proxy_set_header X-Host $host;
+    proxy_buffering off;
+    proxy_cache off;
+
+    add_header X-Cache $upstream_cache_status;
+    add_header Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0";
+	add_header X-Cache $upstream_cache_status;
+
+    proxy_set_header Accept-Encoding "";
+	
+    sub_filter_once off;
+
+    #proxy_cache cache_one;
+    #proxy_cache_key $host$uri$is_args$args;
+    #proxy_cache_valid 200 304 301 302 12h;
+}
+5.打开浏览器访问chat.abc.com，看到如下图则代表接入成功
+
