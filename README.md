@@ -22,7 +22,7 @@ RawChat的技术栈选用反向代理解决方案，即RawChat作为中间人转
 [SharedChat共享站点](https://sharedchat.cn/shared.html)，免费提供多个Plus共享账号！  
 
 
-**您也可以接入RawChat，让您的网站也拥有一样的功能：**
+**您也可以接入RawChat，让您的网站也拥有一样的功能(可以对接自己的卡网)：**
 
 接入前置条件：  
 1.您需要拥有自己的域名  
