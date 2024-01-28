@@ -35,7 +35,7 @@ RawChat的技术栈选用反向代理解决方案，即RawChat作为中间人转
 2.打开宝塔面板添加网站，将上面的三个网址添加到网站，如下图  
 ![image](https://github.com/RawChat/RawChat/assets/157953998/7cbb5ba3-d786-42c0-b29d-da766ca15f0b)  
 3.将这三个网站都开启SSL证书，Let's Encrypt免费  
-4.将这三个网站都开启反向代理，如下图  
+4.将这三个网站都开启反向代理，反向代理的域名为：**rawchat.fun**，替换对应的前缀就好了，如下图  
 ![image](https://github.com/RawChat/RawChat/assets/157953998/37856ca0-b533-4236-80f0-f4485bae5d64)  
 反向代理配置，最好直接复制：  
 ```location /
