@@ -17,7 +17,7 @@ RawChat的技术栈选用反向代理解决方案，即RawChat作为中间人转
 
 [Rawchat使用教程文档](https://gqetpw6dpfw.feishu.cn/docx/Jc6idZvtRoEvxQxiF9Fcu4Hun8e)（运营文档，一定要先阅读文档！！）  
 
-[Rawchat商业站点](https://chat.openai.fo)，成品演示  
+[Rawchat商业站点](https://chat.openai.fo)，成品演示（登录用的不是官网账号，需要注册）
 
 [SharedChat共享站点](https://sharedchat.cn/shared.html)，免费提供多个Plus共享账号！  
 
