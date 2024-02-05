@@ -15,7 +15,7 @@ RawChat的设计初衷是降低ChatGPT官网的使用门槛，支持的功能：
 RawChat技术原理：  
 RawChat的技术栈选用反向代理解决方案，即RawChat作为中间人转发用户到官网的请求以及响应，从而实现免梯目的，并且RawChat会接管部分官网的功能，本地化部分接口（比如登录注册接口是由RawChat接管的，所以使用的不是官网账号），可以理解为您就在实时的使用官网。
 
-[Rawchat使用教程文档](https://gqetpw6dpfw.feishu.cn/docx/Jc6idZvtRoEvxQxiF9Fcu4Hun8e)（运营文档，一定要先阅读文档！！）  
+[Rawchat使用教程文档](https://gqetpw6dpfw.feishu.cn/docx/Jc6idZvtRoEvxQxiF9Fcu4Hun8e)（商业站点运营文档，一定要先阅读文档！！）  
 
 [Rawchat商业站点](https://chat.openai.fo)，成品演示（登录用的不是官网账号，需要注册）
 
@@ -74,4 +74,4 @@ RawChat的技术栈选用反向代理解决方案，即RawChat作为中间人转
 如果您觉得RawChat好，想支持RawChat，请务必点个Star，谢谢！
 
 **RawChat交流群：**  
-![image](https://github.com/RawChat/RawChat/assets/157953998/0ae12ddf-581a-44ff-81f0-5f734b7ae374)
+![image](https://github.com/RawChat/RawChat/assets/157953998/b9c1572b-d9f8-4add-a48b-dc0f9239d8b0)
