@@ -23,7 +23,7 @@ RawChat的技术栈选用反向代理解决方案，即RawChat作为中间人转
 
 [Rawchat直登站点](https://chat.rawchat.cc)，可以使用官网的账号直接登录
 
-[Rawchat桌面版](https://t0svlmehz1v.feishu.cn/docx/UvWJd3e0Yozgt0xxXaXcW4uAnuf)，“最后的防线”
+[Rawchat桌面版](https://t0svlmehz1v.feishu.cn/docx/UvWJd3e0Yozgt0xxXaXcW4uAnuf)，采用正向代理，“最后的防线”
 
 **您也可以接入RawChat，让您的网站也拥有一样的功能(可以对接自己的卡网)：**
 
