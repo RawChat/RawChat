@@ -76,4 +76,5 @@ RawChat的技术栈选用反向代理解决方案，即RawChat作为中间人转
 如果您觉得RawChat好，想支持RawChat，请务必点个Star，谢谢！
 
 **RawChat交流群：**  
-![image](https://github.com/RawChat/RawChat/assets/157953998/22ef3ebf-effa-4bc2-9ea5-d65ac52ffe36)
+![image](https://github.com/RawChat/RawChat/assets/157953998/59e5c73e-11cd-4f92-acd4-d7ea63847d7f)
+
