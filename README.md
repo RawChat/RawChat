@@ -1,4 +1,4 @@
-# RawChat Shout Out To Pandora 
+# RawChat
 **一个利用反向代理使用ChatGPT官网的通用解决方案。**
 
 RawChat的设计初衷是降低ChatGPT官网的使用门槛，支持的功能：  
